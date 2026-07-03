@@ -1,7 +1,9 @@
 import path from 'path';
 import dotenv from 'dotenv';
 
-dotenv.config({ path: path.resolve(__dirname, '../../.env') });
+if (typeof __dirname !== 'undefined') {
+  dotenv.config({ path: path.resolve(__dirname, '../../.env') });
+}
 
 const requiredVars = ['TMDB_API_KEY'] as const;
 

@@ -1,7 +1,7 @@
 name = "netveer-api"
 main = "src/worker.ts"
 compatibility_date = "2025-09-25"
-compatibility_flags = ["nodejs_compat"]
+compatibility_flags = ["nodejs_compat", "enable_nodejs_http_server_modules"]
 
 [vars]
 NODE_ENV = "production"
