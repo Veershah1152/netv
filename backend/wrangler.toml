@@ -1,0 +1,15 @@
+name = "netveer-api"
+main = "src/worker.ts"
+compatibility_date = "2025-09-25"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+NODE_ENV = "production"
+
+# Secrets (set via: wrangler secret put SECRET_NAME)
+# TMDB_API_KEY
+# SUPABASE_URL
+# SUPABASE_SERVICE_ROLE_KEY
+# GEMINI_API_KEY
+# JWT_SECRET
+# FRONTEND_URL
